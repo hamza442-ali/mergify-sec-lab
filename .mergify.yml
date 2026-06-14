@@ -1,0 +1,11 @@
+queue_rules:
+  - name: default
+    merge_conditions: []
+
+pull_request_rules:
+  - name: noop marker rule
+    conditions:
+      - "label=mergify-noop"
+    actions:
+      comment:
+        message: "noop"
