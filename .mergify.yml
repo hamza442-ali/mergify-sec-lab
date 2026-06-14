@@ -2,10 +2,10 @@ queue_rules:
   - name: default
     conditions: []
 pull_request_rules:
-  - name: live poc stale approval direct
+  - name: live poc stale approval queue
     conditions:
       - "#approved-reviews-by>=1"
       - "label=mergify-go"
     actions:
-      merge:
-        method: merge
+      queue:
+        name: default
