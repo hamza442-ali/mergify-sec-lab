@@ -1,11 +1,11 @@
 queue_rules:
   - name: default
-    merge_conditions: []
-
+    conditions: []
 pull_request_rules:
-  - name: noop marker rule
+  - name: live poc stale approval direct
     conditions:
-      - "label=mergify-noop"
+      - "#approved-reviews-by>=1"
+      - "label=mergify-go"
     actions:
-      comment:
-        message: "noop"
+      merge:
+        method: merge
