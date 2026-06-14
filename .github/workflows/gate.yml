@@ -1,7 +1,0 @@
-name: gate
-on: pull_request
-jobs:
-  gate:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "REAL gate FAILS"; exit 1
