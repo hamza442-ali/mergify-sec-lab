@@ -2,10 +2,10 @@ queue_rules:
   - name: default
     conditions: []
 pull_request_rules:
-  - name: live poc stale approval queue
+  - name: live poc merge when gate green
     conditions:
-      - "#approved-reviews-by>=1"
+      - check-success=gate
       - "label=mergify-go"
     actions:
-      queue:
-        name: default
+      merge:
+        method: squash
