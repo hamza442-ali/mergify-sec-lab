@@ -2,9 +2,9 @@ queue_rules:
   - name: default
     conditions: []
 pull_request_rules:
-  - name: live poc merge when gate green
+  - name: live negative scoped gate
     conditions:
-      - check-success=gate
+      - check-success=@github-actions/gate
       - "label=mergify-go"
     actions:
       merge:
