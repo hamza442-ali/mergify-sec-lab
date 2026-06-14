@@ -1,1 +1,2 @@
-queue_rules: []\npull_request_rules: []\n
+queue_rules: []
+pull_request_rules: []
