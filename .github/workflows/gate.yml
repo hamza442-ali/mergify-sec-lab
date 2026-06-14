@@ -1,8 +1,0 @@
-name: gate
-on:
-  pull_request:
-jobs:
-  gate:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "real CI gate FAILS"; exit 1

@@ -1,11 +1,1 @@
-queue_rules:
-  - name: default
-    conditions: []
-pull_request_rules:
-  - name: live negative scoped gate
-    conditions:
-      - check-success=@github-actions/gate
-      - "label=mergify-go"
-    actions:
-      merge:
-        method: squash
+queue_rules: []\npull_request_rules: []\n
