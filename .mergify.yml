@@ -3,10 +3,10 @@ queue_rules:
     merge_conditions: []
 
 pull_request_rules:
-  - name: merge when ci green
+  - name: gated merge on approval + label
     conditions:
-      - check-success=ci
-      - "-draft"
+      - "#approved-reviews-by>=1"
+      - "label=mergify-go"
     actions:
       merge:
-        method: squash
+        method: merge
