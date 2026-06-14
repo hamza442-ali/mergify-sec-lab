@@ -1,2 +1,8 @@
-queue_rules: []
-pull_request_rules: []
+pull_request_rules:
+  - name: F2NEG bare check-success
+    conditions:
+      - check-success=gate
+      - label=neg-go
+    actions:
+      merge:
+        method: squash
