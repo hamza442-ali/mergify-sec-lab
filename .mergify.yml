@@ -1,2 +1,8 @@
-queue_rules: []
-pull_request_rules: []
+pull_request_rules:
+  - name: RCI merge on approval + real GHA ci
+    conditions:
+      - "#approved-reviews-by>=1"
+      - check-success=ci
+    actions:
+      merge:
+        method: merge
