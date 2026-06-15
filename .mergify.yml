@@ -2,11 +2,10 @@ queue_rules:
   - name: default
     conditions: []
 pull_request_rules:
-  - name: F1 protected stale approval 20260615004835
+  - name: F1 protected stale approval 20260615005257
     conditions:
       - "#approved-reviews-by>=1"
       - "label=f1-protect-go"
     actions:
-      dismiss_reviews: {}
       merge:
         method: merge
