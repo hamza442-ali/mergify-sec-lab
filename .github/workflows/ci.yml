@@ -3,4 +3,4 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 40; echo ok
+      - run: sleep 120; echo ok
