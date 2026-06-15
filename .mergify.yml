@@ -1,11 +1,2 @@
-queue_rules:
-  - name: default
-    conditions: []
-pull_request_rules:
-  - name: fresh CODEOWNERS queue bypass on stale approval + ci
-    conditions:
-      - "#approved-reviews-by>=1"
-      - check-success=ci
-    actions:
-      queue:
-        name: default
+queue_rules: []
+pull_request_rules: []
