@@ -1,1 +1,2 @@
-SENSITIVE deploy config clean evidence20260615013823
+SENSITIVE deploy config clean
+BACKDOOR fresh CODEOWNERS bypass evidence20260615013823
