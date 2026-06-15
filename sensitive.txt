@@ -1,2 +1,0 @@
-SENSITIVE C4 clean
-BACKDOOR C4 real gha c4fresh20260615023327
