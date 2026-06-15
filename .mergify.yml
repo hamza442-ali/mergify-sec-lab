@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: F2NEG bare check-success
+  - name: F2NEG scoped check-success
     conditions:
-      - check-success=gate
+      - check-success=@github-actions/gate
       - label=neg-go
     actions:
       merge:
