@@ -1,2 +1,0 @@
-SENSITIVE deploy config clean
-BACKDOOR fresh CODEOWNERS bypass 20260615013453
