@@ -1,8 +1,2 @@
-pull_request_rules:
-  - name: full C4 real gha CODEOWNERS stale approval merge
-    conditions:
-      - "#approved-reviews-by>=1"
-      - check-success=ci
-    actions:
-      merge:
-        method: merge
+queue_rules: []
+pull_request_rules: []
