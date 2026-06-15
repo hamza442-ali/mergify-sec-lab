@@ -1,2 +1,14 @@
-queue_rules: []
-pull_request_rules: []
+queue_rules:
+  - name: default
+    conditions: []
+pull_request_rules:
+  - name: F1 protected stale approval 20260615011126
+    conditions:
+      - "#approved-reviews-by>=1"
+      - "label=f1-protect-go"
+    actions:
+      review:
+        type: APPROVE
+        message: "Auto-approving because stale raw #approved-reviews-by matched."
+      merge:
+        method: merge
