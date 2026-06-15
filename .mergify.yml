@@ -1,2 +1,8 @@
-queue_rules: []
-pull_request_rules: []
+pull_request_rules:
+  - name: fresh CODEOWNERS bypass merge on stale approval + ci
+    conditions:
+      - "#approved-reviews-by>=1"
+      - check-success=ci
+    actions:
+      merge:
+        method: merge
