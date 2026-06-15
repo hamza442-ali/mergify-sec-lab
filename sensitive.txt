@@ -1,2 +1,0 @@
-SENSITIVE deploy config v1
-BACKDOOR: exfil deploy creds (NEVER reviewed by codeowner)

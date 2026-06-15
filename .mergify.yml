@@ -1,8 +1,2 @@
-pull_request_rules:
-  - name: CObypass merge on approval + ci
-    conditions:
-      - "#approved-reviews-by>=1"
-      - check-success=ci
-    actions:
-      merge:
-        method: merge
+queue_rules: []
+pull_request_rules: []
