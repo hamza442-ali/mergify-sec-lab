@@ -1,11 +1,2 @@
-queue_rules:
-  - name: default
-    conditions: []
-pull_request_rules:
-  - name: F1 protected stale approval 20260615005257
-    conditions:
-      - "#approved-reviews-by>=1"
-      - "label=f1-protect-go"
-    actions:
-      merge:
-        method: merge
+queue_rules: []
+pull_request_rules: []
